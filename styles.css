@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2B2D38;
+  color: white;
+}
+
+
+.header {
+  padding: 0 80px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: #ABABAB;
+  width: 81px;
+  height: 27px;
+  font-weight: 500;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 4px;
+  background-color: #DB2A6B;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  min-height: calc(100vh - 80px);
+  position: relative;
+
+  background-image: 
+    url("ICONOS/elipse-grande-ext.png"),
+    url("ICONOS/elipse-peq-interior.png");
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: 
+    971px 263px,
+    1217px 540px;
+
+  background-size: 
+    1102px 1102px,
+    850px 850px;
+}
+
+
+
+.hero-left {
+  width: 50%;
+  width: 784px;
+  height: 539px;
+}
+
+.hero-left h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 32px 0 20px
+}
+
+.hero-left p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  width: 648px;
+  height: 120px;
+  color: #909090;
+  margin-bottom: 32px;
+  line-height: 40px;
+  opacity: 50%;
+}
+
+
+
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0 80px;;
+}
+
+.hero-buttons button {
+  padding: 12px 24px;
+  width: 420px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+.primary {
+  background-color: #DB2A6B;
+  color: white;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+
+.primary:hover {
+  text-decoration: underline;
+}
+
+.secondary {
+  background: transparent;
+  width: 148px;
+  height: 40px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  text-decoration: underline;
+}
+
+.arrow-icon {
+  width: 24px;
+}
+
+
+
+
+.items {
+  display: flex;          
+  gap: 48px;              
+}
+
+
+.item {
+  display: flex;          
+  align-items: center;    
+  gap: 12px;              
+  cursor: pointer;
+}
+
+.item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0;       
+}
+
+
+.item span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+
+
+.item:hover span {
+  text-decoration: underline;
+}
+
+
+.item:hover span {
+  text-decoration: underline;
+}
+
+
+.hero-right {
+  width: 1,102px;
+  height: 1,216px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 40px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.morado {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.rosa {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.azul {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.naranja {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.amarillo {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
